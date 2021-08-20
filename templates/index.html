@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<!-- header section -->
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<img src="{% static './images/tm-easy-profile.jpg'%}" class="img-responsive img-circle tm-border" alt="templatemo easy profile">
+				<hr>
+				<h1 class="tm-title bold shadow">Hi, I am Bosipo</h1>
+				<h1 class="white bold shadow">Backend Developer</h1>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- about and skills section -->
+<section class="container">
+	<div class="row">
+		<div class="col-md-6 col-sm-12">
+			<div class="about">
+				<h3 class="accent">Profile</h3>
+				<!-- <h2>Bootstrap v3.3.5</h2> -->
+				<br>
+				<p>
+					A fast paced learner focused on exploring new and existing technologies for building maintainable, 
+					scalable and efficient software systems. Passionate about collaborating with team members to bring 
+					about creative solutions.
+				</p>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-12">
+			<div class="skills">
+				<h2 class="white">Skills</h2>
+				<strong>Backend Processing</strong>
+				<span class="pull-right">82%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" 
+                        aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="width: 82%;"></div>
+					</div>
+				<strong>Frontend Design</strong>
+				<span class="pull-right">60%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" 
+                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+					</div>
+				<strong>Data Processing</strong>
+				<span class="pull-right">74%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" 
+                        aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" style="width: 74%;"></div>
+					</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- education and languages -->
+<section class="container">
+	<div class="row">
+		<div class="col-md-8 col-sm-12">
+			<div class="education">
+				<h2 class="white">Education</h2>
+					<div class="education-content">
+						<h4 class="education-title accent">Computer Science</h4>
+							<div class="education-school">
+								<h5>Covenant University</h5><span></span>
+								<h5>2016 August - 2020 December</h5>
+							</div>
+						<ul class="education-description">
+							<li>Favorite area of study: Omputation ans Automata Theory.</li>
+							<li>Favorite class: Computer programming(Java).</li>
+							<li>Project: Biometric security onlive voting system.</li>
+						</ul>
+					</div>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-12">
+			<div class="languages">
+				<h2>Languages</h2>
+					<ul>
+						<li>C#/ .NET</li>
+						<li>Python/ Django</li>
+						<li>Golang</li>
+						<li>Java</li>
+						<!-- <li>SQL</li> -->
+					</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- contact and experience -->
+<section class="container">
+	<div class="row">
+		<div class="col-md-4 col-sm-12">
+			<div class="contact">
+				<h2>Certificates</h2>
+					<p> Artificial Intelligence Analyst - Explorer Award(IBM)</p>
+					<p> Responsive Web Design(FreeCodeCamp)</p>
+			</div>
+		</div>
+		<div class="col-md-8 col-sm-12">
+			<div class="experience">
+				<h2 class="white">Experiences</h2>
+					<div class="experience-content">
+						<h4 class="experience-title accent">.NET Developer</h4>
+						<h5>InstiQ Professional Services</h5><span></span>
+						<h5>2021 January - Present</h5>
+						<p class="education-description">
+							<ul>
+								<li>Development and testing of REST API's using EntityFramework and Postman</li>
+								<li>Participated as a team member in fully agile Scrum deliveries</li>
+							</ul>
+						</p>
+					</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- SayHello and contact -->
+<section class="container">
+	<div class="row">
+		<div class="col-md-8 col-sm-12">
+			<div class="education">
+				<h2 class="white">Say Hello...</h2>
+					<div class="education-content">
+						<div id="contact-form">
+                              <form action="" method="post" enctype="multipart/form-data">
+								{% csrf_token %}
+								   {{ form.as_p }}
+                                   <div class="wow fadeInUp" data-wow-delay="1.6s">
+                                        <input name="submit" type="submit" class="form-control" id="submit" value="Send">
+                                   </div>
+                              </form>
+                         </div>
+					</div>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-12">
+			<div class="languages">
+				<h2>Contact</h2>
+					<p><i class="fa fa-phone"></i> 010-020-0890</p>
+					<p><i class="fa fa-envelope"></i> bosipooj@gmail.com</p>
+					<p><i class="fa fa-globe"></i> www.company.com</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock content %}
