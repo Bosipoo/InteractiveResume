@@ -12,12 +12,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['still-dusk-69333.herokuapp.com','127.0.0.1']
 
-# ALLOWED_HOSTS = [
-#     '0.0.0.0'
-#     'the-yogify.herokuapp.com',
-#     '127.0.0.1'
-# ]
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -119,7 +113,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
