@@ -68,13 +68,13 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'InteractiveResume',
+        'NAME': 'd4qmb67qmh2ukg',
 
-        'USER': 'postgres',
+        'USER': 'aodltmtcmaanrd',
 
-        'PASSWORD': 'postgres',
+        'PASSWORD': '3916a142b5ab3975566779111394fc86c94ce2aae65f944c6795778215b071c1',
 
-        'HOST': 'localhost',
+        'HOST': 'ec2-3-224-7-166.compute-1.amazonaws.com',
 
         'PORT': '5432',
 
